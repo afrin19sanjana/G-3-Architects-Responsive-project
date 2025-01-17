@@ -203,6 +203,135 @@ nav .menu a:hover{
     }
   }
   @media screen and (min-width: 769px) and (max-width: 992px) {
-  
+    .feature{
+        flex-direction: column;
+    }
+    .feature-image{
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 40px;
+    }
   }
    /* responsive feature part ends */
+   /* feature experience starts */
+  
+    .experience{
+    justify-content: space-between;
+    align-items: center;
+}
+   .experience-header h3{
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3.2rem;
+    color:#131313;
+    border-left: 5px solid#FF900E;
+    padding-left: 21px;
+   }
+   .experience-header p {
+    margin-left: 21px;
+    font-weight: 7400;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color:#727272;
+    margin-right: 28px;
+   }
+  .experience-image{
+    width:474px;
+  }
+   .experience-image img{
+    max-width: 100%;
+    
+   }
+  .experience-content{
+    max-width:392px;
+  }
+    .secondery-button {
+    padding:46px 42px;
+    background:#FF900E ;
+    border:none;
+    border-radius: 8px;
+    color:#ffffff;
+    transform: translateY(-100px);
+    margin-left: -40px;
+    font-size: 1.5rem;
+   }
+   .secondery-button button b{
+    font-size: 4rem;
+   }
+   .feature-experience-content {
+    padding:30px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin: 20px 0px;
+    border-radius: 8px;
+    width:392px;
+    gap:60px;
+   }
+   .feature-experience-content h3{
+    color:#131313;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.4rem;
+   }
+   .feature-experience-content p {
+    color:rgba(114, 114, 114, 1);
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+   }
+   /* feature experience ends */
+   /* responsive .feature-experience starts */
+   @media screen and (max-width: 575px){
+    
+    .secondery-button{
+      margin-left: -20px;
+    }
+    .experience{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .experience-content{
+        width:100%;
+        margin:0px 5px;
+    }
+    .secondery-button{
+        display: none;
+    }
+    .experience-header h3{
+        font-size: 1.8rem;
+    }
+   }
+   @media screen and (min-width: 576px) and (max-width: 768px){
+    .experience{
+     flex-direction: column;
+     justify-content: center;
+    }
+    .experience-content{
+        width:100%;
+    }
+    .secondery-button{
+        margin-left: 6px;
+      }
+    .secondery-button{
+        display: none;
+    }
+    .experience-header h3{
+        font-size: 1.8rem;
+    }
+   }
+   @media screen and (min-width: 769px) and (max-width: 992px){
+    .experience{
+        flex-direction: column;
+        justify-content: center;
+       }
+       .experience-content{
+           width:100%;
+           margin:0 auto;
+       }
+       .secondery-button{
+           margin-left: 6px;
+         }
+         .experience-header h3{
+            font-size: 2rem;
+        }
+   }
+  
+      /* responsive .feature-experience ends */
