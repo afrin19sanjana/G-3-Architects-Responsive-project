@@ -27,7 +27,10 @@ p {
 }
 .main{
    background: rgba(255, 144, 14, 0.1);
-    
+   padding-bottom: 24px;
+}
+.background{
+    background-color: #ffff;
 }
 .container{
     width:80%;
@@ -53,9 +56,13 @@ p {
 .primary-btn a{
     color:#ffffff;
 }
+.margin{
+    margin:100px 0px;
+}
 /* shared css end */
 /* nav starts */
 nav{
+    padding-top: 66px;
     justify-content:space-between;
     align-items: center;
 }
@@ -64,14 +71,13 @@ nav div ul{
 }
 .logo h2{
     font-weight: 700;
-    font: size 2.8rem;
+    font-size: 2.8rem;
     line-height: 3rem;
     color:#131313;
-    margin-top: 66px;
-   
+    
 }
 nav .menu a {
-    margin-top: 79px;
+   
     color: #424242;
     font-size: 1.1rem;
     font-weight: 500;
@@ -121,7 +127,7 @@ nav .menu a:hover{
     line-height:1rem;
    }
  }
- @media (min-width: 576px) and (max-width: 768px) {
+ @media screen and (min-width: 576px) and (max-width: 768px) {
     nav{
         flex-direction: column;
        }
@@ -134,10 +140,69 @@ nav .menu a:hover{
         line-height:1rem;
        }
   }
-  @media (min-width: 769px) and (max-width: 992px) {
+  @media screen and (min-width: 769px) and (max-width: 992px) {
     .banner-content h1 {
         font-size:3rem;
         line-height:3.5rem;
        }  
   }
   /*header responsive ends */
+  /* Feature part starts */
+  .feature{
+    display: flex;
+    align-items: center;
+  }
+  .feature-image{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:10px;
+  
+  }
+  .feature-content{
+    margin-left: 70px;
+    max-width: 537px;
+  }
+  .feature-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color:#727272;
+    margin: 24px 0px;
+  }
+  .last-part,
+  .first-part {
+    color:#FF900E;
+    font-weight: 500;
+    font-weight: 2.8rem;
+  }
+  .first-part{
+    color:#727272;
+}
+  /* feature part ends */
+  /* responsive feature part */
+  @media screen and (max-width: 575px){
+    .feature{
+        flex-direction: column;
+    }
+    .feature-image{
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 40px;
+    }
+    .feature-content{
+        margin-left: 30px;
+       
+      }
+  }
+  @media screen and (min-width: 576px) and (max-width: 768px){
+    .feature{
+        flex-direction: column;
+    }
+    .feature-image{
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 40px;
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+  
+  }
+   /* responsive feature part ends */
