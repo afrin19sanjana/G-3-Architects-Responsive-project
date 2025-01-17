@@ -67,6 +67,7 @@ nav div ul{
     font: size 2.8rem;
     line-height: 3rem;
     color:#131313;
+    margin-top: 66px;
    
 }
 nav .menu a {
@@ -75,6 +76,7 @@ nav .menu a {
     font-size: 1.1rem;
     font-weight: 500;
     line-height: 1.6rem;
+    margin-top: 79px;
 }
 nav .menu a:hover{
     color:#131313;
