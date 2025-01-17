@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+    width:100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding:0;
+}
+.main{
+   background: rgba(255, 144, 14, 0.1);
+    
+}
+.container{
+    width:80%;
+    margin:0 auto;
+}
+/* shared css */
+.font-name{
+    font-family: "Work Sans", serif;
+}
+.flex{
+    display: flex;
+}
+.primary-btn{
+    background:#FF900E;
+    border:none;
+    color:#ffffff;
+    padding:21px 25px;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.primary-btn a{
+    color:#ffffff;
+}
+/* shared css end */
+/* nav starts */
+nav{
+    justify-content:space-between;
+    align-items: center;
+}
+nav div ul{
+    gap: 30px;
+}
+.logo h2{
+    font-weight: 700;
+    font: size 2.8rem;
+    line-height: 3rem;
+    color:#131313;
+   
+}
+nav .menu a {
+    margin-top: 79px;
+    color: #424242;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+}
+nav .menu a:hover{
+    color:#131313;
+    font-weight: 700;
+    transition: 0.5s;
+}
+/* nav ends */
+/* banner starts */
+.banner-content{
+    text-align: center;
+    max-width: 862px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+.banner-content h1{
+    font-weight: 700;
+    font-size: 3.5rem;
+    color:#131313;
+    line-height: 4.6rem;
+    
+}
+.banner-content p{
+    margin-bottom: 32px;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color:#727272;
+}
+/* banner ends */
+/* responsive header */
+@media screen and (max-width: 575px) { 
+   nav{
+    flex-direction: column;
+   }
+   .banner-content h1 {
+    font-size:2rem;
+    line-height: 2.5rem;
+   }
+   .banner-content p{
+    font-size:0.5rem;
+    line-height:1rem;
+   }
+ }
+ @media (min-width: 576px) and (max-width: 768px) {
+    nav{
+        flex-direction: column;
+       }
+       .banner-content h1 {
+        font-size:2.5rem;
+        line-height:3rem;
+       }  
+       .banner-content p{
+        font-size:0.5rem;
+        line-height:1rem;
+       }
+  }
+  @media (min-width: 769px) and (max-width: 992px) {
+    .banner-content h1 {
+        font-size:3rem;
+        line-height:3.5rem;
+       }  
+  }
+  /*header responsive ends */
